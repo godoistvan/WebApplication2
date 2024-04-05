@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using WpfApp1.Interfaces;
 
 namespace WpfApp1.Logic
@@ -10,7 +11,7 @@ namespace WpfApp1.Logic
     public class FieldState : IFieldState
     {
         string[] field = new string[9];
-        public void Draw(string player, int fieldnumber)
+        public void Draw(Player player)
         {
             field[fieldnumber] = player;
         }
